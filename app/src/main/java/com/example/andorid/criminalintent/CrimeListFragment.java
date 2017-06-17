@@ -1,7 +1,6 @@
 package com.example.andorid.criminalintent;
 
 import android.content.Intent;
-import android.database.CursorWrapper;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
@@ -18,12 +17,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-
-import com.example.andorid.criminalintent.databse.CrimeDbSchema;
-
 import java.text.DateFormat;
 import java.util.List;
-import java.util.UUID;
 
 
 public class CrimeListFragment extends Fragment {
@@ -54,6 +49,7 @@ public class CrimeListFragment extends Fragment {
         mNewCrimeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
+
                 createNewCrime();
             }
         });
